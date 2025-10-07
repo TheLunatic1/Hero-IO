@@ -1,21 +1,434 @@
 [
   {
+    "image": "https://example.com/icon1.png",
+    "title": "Weather Forecast Pro",
+    "companyName": "WeatherTech Inc",
     "id": 1,
-    "title": "Forest: Focus For Productivity",
-    "companyName": "Productive.io",
-    "image": "https://unsplash.com/photos/gray-placeholder",
-    "description": "This focus app takes the proven Pomodoro technique and makes it even more practical for modern lifestyles...",
-    "size": 258,
-    "reviews": 9000,
-    "ratingAvg": 4.9,
-    "downloads": 9000000,
+    "description": "Accurate weather forecasts with real-time updates and severe weather alerts",
+    "size": 45,
+    "reviews": 12450,
+    "ratingAvg": 4.3,
+    "downloads": 1500000,
     "ratings": [
-      { "name": "1 star", "count": 1000 },
-      { "name": "2 star", "count": 2000 },
-      { "name": "3 star", "count": 3000 },
-      { "name": "4 star", "count": 4000 },
-      { "name": "5 star", "count": 5000 }
+      { "name": "1 star", "count": 872 },
+      { "name": "2 star", "count": 1245 },
+      { "name": "3 star", "count": 3110 },
+      { "name": "4 star", "count": 4987 },
+      { "name": "5 star", "count": 2236 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon2.png",
+    "title": "Photo Editor Plus",
+    "companyName": "Creative Studio",
+    "id": 2,
+    "description": "Professional photo editing tools with filters and advanced adjustments",
+    "size": 78,
+    "reviews": 8920,
+    "ratingAvg": 4.7,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 267 },
+      { "name": "2 star", "count": 445 },
+      { "name": "3 star", "count": 890 },
+      { "name": "4 star", "count": 2456 },
+      { "name": "5 star", "count": 4862 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon3.png",
+    "title": "Fitness Tracker",
+    "companyName": "HealthTech Solutions",
+    "id": 3,
+    "description": "Track your workouts, steps, and calories with detailed analytics",
+    "size": 32,
+    "reviews": 15670,
+    "ratingAvg": 4.1,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 1256 },
+      { "name": "2 star", "count": 1876 },
+      { "name": "3 star", "count": 4123 },
+      { "name": "4 star", "count": 5234 },
+      { "name": "5 star", "count": 3181 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon4.png",
+    "title": "Budget Planner",
+    "companyName": "Finance Masters",
+    "id": 4,
+    "description": "Manage your expenses and create budgets with intuitive charts",
+    "size": 28,
+    "reviews": 7430,
+    "ratingAvg": 4.4,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 445 },
+      { "name": "2 star", "count": 678 },
+      { "name": "3 star", "count": 1567 },
+      { "name": "4 star", "count": 2876 },
+      { "name": "5 star", "count": 1864 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon5.png",
+    "title": "Language Learning",
+    "companyName": "LinguaTech",
+    "id": 5,
+    "description": "Learn new languages with interactive lessons and speech recognition",
+    "size": 65,
+    "reviews": 23100,
+    "ratingAvg": 4.6,
+    "downloads": 3200000,
+    "ratings": [
+      { "name": "1 star", "count": 923 },
+      { "name": "2 star", "count": 1384 },
+      { "name": "3 star", "count": 2768 },
+      { "name": "4 star", "count": 6920 },
+      { "name": "5 star", "count": 11105 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon6.png",
+    "title": "Music Streamer",
+    "companyName": "AudioWave Inc",
+    "id": 6,
+    "description": "Stream millions of songs with personalized recommendations",
+    "size": 52,
+    "reviews": 18760,
+    "ratingAvg": 4.2,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 1125 },
+      { "name": "2 star", "count": 1876 },
+      { "name": "3 star", "count": 4123 },
+      { "name": "4 star", "count": 5621 },
+      { "name": "5 star", "count": 6015 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon7.png",
+    "title": "Recipe Finder",
+    "companyName": "Kitchen Pro",
+    "id": 7,
+    "description": "Discover new recipes with step-by-step cooking instructions",
+    "size": 41,
+    "reviews": 8920,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 356 },
+      { "name": "2 star", "count": 445 },
+      { "name": "3 star", "count": 1245 },
+      { "name": "4 star", "count": 3123 },
+      { "name": "5 star", "count": 3751 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon8.png",
+    "title": "Task Manager Pro",
+    "companyName": "Productivity Labs",
+    "id": 8,
+    "description": "Organize your tasks with reminders and collaboration features",
+    "size": 36,
+    "reviews": 11230,
+    "ratingAvg": 4.0,
+    "downloads": 1650000,
+    "ratings": [
+      { "name": "1 star", "count": 1123 },
+      { "name": "2 star", "count": 1684 },
+      { "name": "3 star", "count": 3368 },
+      { "name": "4 star", "count": 3245 },
+      { "name": "5 star", "count": 1810 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon9.png",
+    "title": "Meditation Guide",
+    "companyName": "Mindful Living",
+    "id": 9,
+    "description": "Guided meditation sessions for stress relief and mindfulness",
+    "size": 29,
+    "reviews": 6780,
+    "ratingAvg": 4.8,
+    "downloads": 890000,
+    "ratings": [
+      { "name": "1 star", "count": 135 },
+      { "name": "2 star", "count": 203 },
+      { "name": "3 star", "count": 542 },
+      { "name": "4 star", "count": 1892 },
+      { "name": "5 star", "count": 4008 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon10.png",
+    "title": "Travel Planner",
+    "companyName": "Wanderlust Tech",
+    "id": 10,
+    "description": "Plan your trips with itinerary builder and local recommendations",
+    "size": 47,
+    "reviews": 5430,
+    "ratingAvg": 4.3,
+    "downloads": 720000,
+    "ratings": [
+      { "name": "1 star", "count": 325 },
+      { "name": "2 star", "count": 488 },
+      { "name": "3 star", "count": 1089 },
+      { "name": "4 star", "count": 1892 },
+      { "name": "5 star", "count": 1636 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon11.png",
+    "title": "News Aggregator",
+    "companyName": "InfoStream",
+    "id": 11,
+    "description": "Personalized news feed from trusted sources worldwide",
+    "size": 33,
+    "reviews": 9870,
+    "ratingAvg": 4.1,
+    "downloads": 1450000,
+    "ratings": [
+      { "name": "1 star", "count": 789 },
+      { "name": "2 star", "count": 1183 },
+      { "name": "3 star", "count": 2467 },
+      { "name": "4 star", "count": 3456 },
+      { "name": "5 star", "count": 1975 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon12.png",
+    "title": "Shopping Assistant",
+    "companyName": "DealFinder Inc",
+    "id": 12,
+    "description": "Find the best deals and compare prices across multiple stores",
+    "size": 39,
+    "reviews": 7650,
+    "ratingAvg": 4.4,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 412 },
+      { "name": "2 star", "count": 618 },
+      { "name": "3 star", "count": 1372 },
+      { "name": "4 star", "count": 2789 },
+      { "name": "5 star", "count": 2459 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon13.png",
+    "title": "Sleep Tracker",
+    "companyName": "Restful Tech",
+    "id": 13,
+    "description": "Monitor your sleep patterns and get personalized improvement tips",
+    "size": 31,
+    "reviews": 4320,
+    "ratingAvg": 4.2,
+    "downloads": 680000,
+    "ratings": [
+      { "name": "1 star", "count": 258 },
+      { "name": "2 star", "count": 388 },
+      { "name": "3 star", "count": 864 },
+      { "name": "4 star", "count": 1512 },
+      { "name": "5 star", "count": 1298 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon14.png",
+    "title": "Document Scanner",
+    "companyName": "Office Tools Pro",
+    "id": 14,
+    "description": "Scan and digitize documents with OCR text recognition",
+    "size": 42,
+    "reviews": 15670,
+    "ratingAvg": 4.7,
+    "downloads": 1950000,
+    "ratings": [
+      { "name": "1 star", "count": 470 },
+      { "name": "2 star", "count": 705 },
+      { "name": "3 star", "count": 1567 },
+      { "name": "4 star", "count": 4701 },
+      { "name": "5 star", "count": 8227 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon15.png",
+    "title": "Social Media Manager",
+    "companyName": "Social Pro Tools",
+    "id": 15,
+    "description": "Schedule posts and analyze performance across social platforms",
+    "size": 55,
+    "reviews": 8760,
+    "ratingAvg": 4.0,
+    "downloads": 1250000,
+    "ratings": [
+      { "name": "1 star", "count": 876 },
+      { "name": "2 star", "count": 1314 },
+      { "name": "3 star", "count": 2628 },
+      { "name": "4 star", "count": 2628 },
+      { "name": "5 star", "count": 1314 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon16.png",
+    "title": "Learning Games",
+    "companyName": "EduPlay Studios",
+    "id": 16,
+    "description": "Educational games for children with progress tracking",
+    "size": 68,
+    "reviews": 23450,
+    "ratingAvg": 4.6,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 938 },
+      { "name": "2 star", "count": 1407 },
+      { "name": "3 star", "count": 2814 },
+      { "name": "4 star", "count": 7035 },
+      { "name": "5 star", "count": 11256 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon17.png",
+    "title": "VPN Security",
+    "companyName": "SecureNet Pro",
+    "id": 17,
+    "description": "Protect your privacy with secure VPN connection",
+    "size": 38,
+    "reviews": 19870,
+    "ratingAvg": 4.3,
+    "downloads": 2650000,
+    "ratings": [
+      { "name": "1 star", "count": 1391 },
+      { "name": "2 star", "count": 2086 },
+      { "name": "3 star", "count": 4172 },
+      { "name": "4 star", "count": 5960 },
+      { "name": "5 star", "count": 6261 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon18.png",
+    "title": "Calendar Sync",
+    "companyName": "Time Management Co",
+    "id": 18,
+    "description": "Sync multiple calendars and manage your schedule efficiently",
+    "size": 27,
+    "reviews": 6540,
+    "ratingAvg": 4.1,
+    "downloads": 980000,
+    "ratings": [
+      { "name": "1 star", "count": 523 },
+      { "name": "2 star", "count": 785 },
+      { "name": "3 star", "count": 1744 },
+      { "name": "4 star", "count": 2286 },
+      { "name": "5 star", "count": 1202 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon19.png",
+    "title": "Expense Tracker",
+    "companyName": "Money Manager Pro",
+    "id": 19,
+    "description": "Track your daily expenses with category breakdowns",
+    "size": 34,
+    "reviews": 11230,
+    "ratingAvg": 4.4,
+    "downloads": 1560000,
+    "ratings": [
+      { "name": "1 star", "count": 674 },
+      { "name": "2 star", "count": 1011 },
+      { "name": "3 star", "count": 2247 },
+      { "name": "4 star", "count": 4045 },
+      { "name": "5 star", "count": 3253 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon20.png",
+    "title": "Video Editor",
+    "companyName": "Creative Video Labs",
+    "id": 20,
+    "description": "Edit videos with professional tools and effects",
+    "size": 89,
+    "reviews": 7650,
+    "ratingAvg": 4.5,
+    "downloads": 920000,
+    "ratings": [
+      { "name": "1 star", "count": 382 },
+      { "name": "2 star", "count": 573 },
+      { "name": "3 star", "count": 1274 },
+      { "name": "4 star", "count": 2675 },
+      { "name": "5 star", "count": 2746 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon21.png",
+    "title": "Plant Care Guide",
+    "companyName": "Green Thumb Tech",
+    "id": 21,
+    "description": "Identify plants and get care instructions with reminders",
+    "size": 43,
+    "reviews": 4320,
+    "ratingAvg": 4.7,
+    "downloads": 580000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 195 },
+      { "name": "3 star", "count": 432 },
+      { "name": "4 star", "count": 1512 },
+      { "name": "5 star", "count": 2051 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon22.png",
+    "title": "Music Teacher",
+    "companyName": "Melody Masters",
+    "id": 22,
+    "description": "Learn to play instruments with interactive lessons",
+    "size": 72,
+    "reviews": 5430,
+    "ratingAvg": 4.2,
+    "downloads": 760000,
+    "ratings": [
+      { "name": "1 star", "count": 434 },
+      { "name": "2 star", "count": 651 },
+      { "name": "3 star", "count": 1447 },
+      { "name": "4 star", "count": 1958 },
+      { "name": "5 star", "count": 940 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon23.png",
+    "title": "Puzzle Games",
+    "companyName": "Brain Teaser Studio",
+    "id": 23,
+    "description": "Collection of challenging puzzle games for all ages",
+    "size": 58,
+    "reviews": 18760,
+    "ratingAvg": 4.8,
+    "downloads": 2450000,
+    "ratings": [
+      { "name": "1 star", "count": 375 },
+      { "name": "2 star", "count": 563 },
+      { "name": "3 star", "count": 1251 },
+      { "name": "4 star", "count": 5254 },
+      { "name": "5 star", "count": 11317 }
+    ]
+  },
+  {
+    "image": "https://example.com/icon24.png",
+    "title": "Home Workout",
+    "companyName": "FitLife Apps",
+    "id": 24,
+    "description": "No-equipment workout routines with video guidance",
+    "size": 46,
+    "reviews": 23450,
+    "ratingAvg": 4.5,
+    "downloads": 3200000,
+    "ratings": [
+      { "name": "1 star", "count": 1173 },
+      { "name": "2 star", "count": 1759 },
+      { "name": "3 star", "count": 3910 },
+      { "name": "4 star", "count": 8209 },
+      { "name": "5 star", "count": 8399 }
     ]
   }
-
 ]
