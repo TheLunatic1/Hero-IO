@@ -16,7 +16,7 @@ const Apps = () => {
   useEffect(() => {
     let result = [...apps];
 
-    // Filter
+    // Filter 
     if (searchTerm) {
       result = result.filter(app =>
         app.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -24,7 +24,7 @@ const Apps = () => {
       );
     }
 
-    // Sort
+    // Sort 
     result.sort((a, b) => {
       if (sortBy === 'title') return a.title.localeCompare(b.title);
       if (sortBy === 'rating') return b.ratingAvg - a.ratingAvg;
@@ -38,7 +38,7 @@ const Apps = () => {
   return (
     <div className="container mx-auto py-12 px-4">
       <h1 className="text-4xl font-bold text-gray-800 text-center mb-8">All Apps</h1>
-      {/* Apps Found and Search/Sort */}
+      {/* Search/Sort */}
       <div className="flex flex-col md:flex-row justify-between items-center mb-8">
         <p className="text-lg text-gray-600">
           {filteredApps.length} Apps Found

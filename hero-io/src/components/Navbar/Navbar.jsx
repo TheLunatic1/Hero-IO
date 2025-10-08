@@ -31,7 +31,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/installation"
+              to="/my-installations"
               className={({ isActive }) =>
                 isActive ? 'text-blue-600 font-bold' : 'text-gray-600'
               }

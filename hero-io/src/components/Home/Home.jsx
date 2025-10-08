@@ -24,7 +24,7 @@ const Home = () => {
             </p>
             <div className="space-x-4">
               <a
-                href="https://www.apple.com/app-store/"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary bg-blue-600 border-none hover:bg-blue-700"
@@ -32,7 +32,7 @@ const Home = () => {
                 App Store
               </a>
               <a
-                href="https://play.google.com/store"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary bg-green-600 border-none hover:bg-green-700"

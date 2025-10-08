@@ -9,14 +9,14 @@ import MyInstallations from './components/MyInstallations/MyInstallations';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
-  const [installedApps, setInstalledApps] = useState([]);
+  const [installedApps, setInstalledApps] = useState(() => {
+    const storedApps = localStorage.getItem('installedApps');
+    return storedApps ? JSON.parse(storedApps) : [];
+  });
 
   useEffect(() => {
-    const storedApps = localStorage.getItem('installedApps');
-    if (storedApps) {
-      setInstalledApps(JSON.parse(storedApps));
-    }
-  }, []);
+    localStorage.setItem('installedApps', JSON.stringify(installedApps));
+  }, [installedApps]);
 
   const router = createBrowserRouter([
     {
@@ -34,21 +34,19 @@ function App() {
           loader: appsLoader,
         },
         {
-          path: '/installation',
-          element: <Installation />,
+          path: '/my-installations',
+          element: <Installation installedApps={installedApps} setInstalledApps={setInstalledApps} />,
         },
         {
           path: '/apps/:id',
           element: <AppDetails installedApps={installedApps} setInstalledApps={setInstalledApps} />,
           loader: appDetailsLoader,
         },
-        {
-          path: '/my-installations',
-          element: <MyInstallations installedApps={installedApps} setInstalledApps={setInstalledApps} />,
-        },
       ],
     },
-  ]);
+  ], {
+    hydrationData: { fallback: <div>Loading...</div> },
+  });
 
   return <RouterProvider router={router} />;
 }
