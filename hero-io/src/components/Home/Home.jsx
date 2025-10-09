@@ -70,7 +70,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Top Apps Section */}
+      {/* Top Apps */}
       <div className="container mx-auto py-12 px-4 bg-white">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Trending Apps</h2>
         <h2 className="text-1xl text-gray-800 text-center mb-8">Explore All Trending Apps on the Market developed by us</h2>

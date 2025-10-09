@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer p-10 bg-linear-35 from-violet-700 to-purple-500 text-white">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Logo and Description */}
+          
           <div className="space-y-4">
             <div href="/" className="btn border-none bg-transparent shadow-none text-xl text-white">
               <img className='h-[40px] ' src={`${logo}`} alt="" />
@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+          
           <div>
             <span className="footer-title">Quick Links</span>
             <ul className="space-y-2">
@@ -29,7 +29,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact and Social */}
+          
           <div>
             <span className="footer-title">Connect With Us</span>
             <div className="grid grid-flow-col gap-4 mt-2">
