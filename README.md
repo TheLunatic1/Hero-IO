@@ -1,5 +1,5 @@
 # Hero IO
 
-Description: A productivity app marketplace.
+Description: An app marketplace.
 
-Technologies: React, TailwindCSS, DaisyUI, React Router, Recharts
+Technologies: Vite + React, TailwindCSS, DaisyUI, React Router, Recharts
