@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import AppCard from '../AppCard/AppCard';
 
 export async function loader() {
   const response = await fetch('/apps.json');
@@ -10,39 +11,39 @@ export async function loader() {
 const Apps = () => {
   const apps = useLoaderData();
   const [searchTerm, setSearchTerm] = useState('');
-  const [sortBy, setSortBy] = useState('title');
+  const [sortBy, setSortBy] = useState('low-high');
   const [filteredApps, setFilteredApps] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    setIsLoading(true);
     let result = [...apps];
 
-    // Filter 
+    // Filter
     if (searchTerm) {
-      result = result.filter(app =>
-        app.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        app.companyName.toLowerCase().includes(searchTerm.toLowerCase())
+      result = result.filter((app) =>
+        app.title.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
 
-    // Sort 
+    // Sort
     result.sort((a, b) => {
-      if (sortBy === 'title') return a.title.localeCompare(b.title);
-      if (sortBy === 'rating') return b.ratingAvg - a.ratingAvg;
-      if (sortBy === 'downloads') return b.downloads - a.downloads;
+      if (sortBy === 'high-low') return a.downloads - b.downloads;
+      if (sortBy === 'low-high') return b.downloads - a.downloads;
       return 0;
     });
 
     setFilteredApps(result);
+    setTimeout(() => setIsLoading(false), 500);
   }, [searchTerm, sortBy, apps]);
 
   return (
     <div className="container mx-auto py-12 px-4">
-      <h1 className="text-4xl font-bold text-gray-800 text-center mb-8">All Apps</h1>
-      {/* Search/Sort */}
+      <h1 className="text-4xl font-bold text-gray-800 text-center mb-8">Our All Applications</h1>
+      <h1 className="text-2xl text-gray-800 text-center mb-8">Explore All Apps on the Market developed by us. We code for Millions</h1>
+
       <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-        <p className="text-lg text-gray-600">
-          {filteredApps.length} Apps Found
-        </p>
+        <p className="text-lg text-gray-600">{filteredApps.length} Apps Found</p>
         <div className="flex flex-col md:flex-row gap-4 mt-4 md:mt-0">
           <input
             type="text"
@@ -56,30 +57,24 @@ const Apps = () => {
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
           >
-            <option value="title">Sort by Title</option>
-            <option value="rating">Sort by Rating</option>
-            <option value="downloads">Sort by Downloads</option>
+            <option value="high-low">Sort by Downloads: Low to High</option>
+            <option value="low-high">Sort by Downloads: High to Low</option>
           </select>
         </div>
       </div>
-      {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        {filteredApps.map((app) => (
-          <div key={app.id} className="card bg-white shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow">
-            <img
-              src={app.image}
-              alt={app.title}
-              className="w-full h-32 object-cover rounded-t-lg"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold text-gray-700">{app.title}</h3>
-              <p className="text-sm text-gray-500">{app.companyName}</p>
-              <p className="text-sm text-gray-600 mt-2">{app.description.substring(0, 50)}...</p>
-              <p className="text-sm text-yellow-600 mt-2">★ {app.ratingAvg}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+      {isLoading ? (
+        <div className="text-center">
+          <span className="loading loading-spinner loading-lg text-primary"></span>
+        </div>
+      ) : filteredApps.length === 0 ? (
+        <p className="text-center text-gray-600">No Apps Found</p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {filteredApps.map((app) => (
+            <AppCard key={app.id} app={app} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
